@@ -5,8 +5,8 @@
 [![David Dev Dependency Status](https://david-dm.org/briangann/grafana-circleci-datasource/dev-status.svg)](https://david-dm.org/briangann/grafana-circleci-datasource/?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/briangann/grafana-circleci-datasource/badge.svg)](https://snyk.io/test/github/briangann/grafana-circleci-datasource)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/changeme/maintainability)](https://codeclimate.com/github/briangann/grafana-circleci-datasource/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/changeme/test_coverage)](https://codeclimate.com/github/briangann/grafana-circleci-datasource/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e9c4cd2714cba0fdae56/maintainability)](https://codeclimate.com/github/briangann/grafana-circleci-datasource/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e9c4cd2714cba0fdae56/test_coverage)](https://codeclimate.com/github/briangann/grafana-circleci-datasource/test_coverage)
 
 ## Docker Support
 

@@ -1,0 +1,28 @@
+# config file version
+apiVersion: 1
+
+deleteDatasources:
+  - name: CircleCI
+    orgId: 1
+datasources:
+- name: CircleCI
+  type: briangann-circleci-datasource
+  access: proxy
+  password:
+  user:
+  basicAuth: false
+  basicAuthUser:
+  basicAuthPassword:
+  withCredentials:
+  isDefault: true
+  jsonData:
+    cacheInterval: 60
+    tlsAuth: false
+    tlsAuthWithCACert: false
+  secureJsonData:
+    api_key: CHANGEME
+    tlsCACert: ""
+    tlsClientCert: ""
+    tlsClientKey: ""
+  version: 1
+  editable: true

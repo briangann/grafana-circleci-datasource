@@ -1,0 +1,39 @@
+{
+  "type": "datasource",
+  "name": "Grafana Data Source for CircleCI",
+  "id": "briangann-circleci-datasource",
+  "metrics": true,
+  "backend": true,
+  "executable": "gpx_circleci",
+  "info": {
+    "description": "Grafana Data Source for CircleCI",
+    "author": {
+      "name": "Brian Gann"
+    },
+    "keywords": [
+      "circleci"
+    ],
+    "logos": {
+      "small": "img/circleci-logo.svg",
+      "large": "img/circleci-logo.svg"
+    },
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://github.com/briangann/grafana-circleci-datasource"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/briangann/grafana-circleci-datasource/blob/master/LICENSE"
+      }
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaVersion": "7.x.x",
+    "grafanaDependency": ">=7.0.0",
+    "plugins": []
+  }
+}

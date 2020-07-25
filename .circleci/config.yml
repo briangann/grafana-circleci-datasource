@@ -27,7 +27,9 @@ workflows:
       - code_coverage_frontend:
           requires:
             - build_frontend
-      - build_backend
+      - build_backend:
+          requires:
+            - yarn_install
       - code_coverage_backend:
           requires:
             - build_backend
@@ -119,6 +121,10 @@ jobs:
     executor: e2e_exec
     steps:
       - checkout
+      - restore_cache:
+          name: restore node_modules
+          keys:
+          - build-cache-{{ .Environment.CACHE_VERSION }}-{{ checksum "yarn.lock" }}
       - run:
           name: Build backend
           command: mage -v buildAll
@@ -130,7 +136,7 @@ jobs:
       - run:
           name: Move results to ci folder
           command: |
-            /usr/local/bin/grafana-toolkit plugin:ci-build --finish
+            ./node_modules/.bin/grafana-toolkit plugin:ci-build --finish
       - persist_to_workspace:
           root: .
           paths:
@@ -178,6 +184,7 @@ jobs:
           command: |
             export GOPATH=/go
             mage -v coverage
+            ls -alR coverage
             /usr/local/bin/cc-test-reporter format-coverage -t gocov -o out/codeclimate.backend.json coverage/backend.out
       - persist_to_workspace:
           root: .

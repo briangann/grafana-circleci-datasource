@@ -8,6 +8,10 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/e9c4cd2714cba0fdae56/maintainability)](https://codeclimate.com/github/briangann/grafana-circleci-datasource/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/e9c4cd2714cba0fdae56/test_coverage)](https://codeclimate.com/github/briangann/grafana-circleci-datasource/test_coverage)
 
+## Work in Progress
+
+Please note this is a work in progress and not intended to be used yet, I'm just getting started!
+
 ## Docker Support
 
 A docker-compose.yml file is include for easy development and testing, just run
